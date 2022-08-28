@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mr.Wu</title>
+  
+  <subtitle>SkySkin 个人博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2022-08-28T20:39:24.738Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Wu Tao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World[2021-9-19]</title>
+    <link href="http://yoursite.com/2022/08/28/hello-world/"/>
+    <id>http://yoursite.com/2022/08/28/hello-world/</id>
+    <published>2022-08-28T20:39:24.738Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言之printf()函数的参数与占位符</title>
+    <link href="http://yoursite.com/2021/10/15/C-Code/printf%E5%8F%82%E6%95%B0%E4%B8%8E%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+    <id>http://yoursite.com/2021/10/15/C-Code/printf参数与占位符/</id>
+    <published>2021-10-15T00:00:00.000Z</published>
+    <updated>2021-10-19T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>printf()参数与占位符是一一对应关系，如果有n个占位符，printf()的参数就应该有n + 1个。如果参数个数少于对应的占位符，printf()可能会输出内存中的任意值。</p></blockquote><p>printf()的占位符有许多种类，与 C 语言的数据类型相对应。下面按照字母顺序，列出常用的占位符，方便查找，具体含义在后面章节介绍。</p><ul><li><code>%a</code>：浮点数。</li><li><code>%A</code>：浮点数。</li><li><code>%c</code>：字符。</li><li><code>%d</code>：十进制整数。</li><li><code>%e</code>：使用科学计数法的浮点数，指数部分的<code>e</code>为小写。</li><li><code>%E</code>：使用科学计数法的浮点数，指数部分的<code>E</code>为大写。</li><li><code>%i</code>：整数，基本等同于<code>%d</code>。</li><li><code>%f</code>：小数（包含<code>float</code>类型和<code>double</code>类型）。</li><li><code>%g</code>：<code>6</code>个有效数字的浮点数。整数部分一旦超过<code>6</code>位，就会自动转为科学计数法，指数部分的<code>e</code>为小写。</li><li><code>%G</code>：等同于<code>%g</code>，唯一的区别是指数部分的<code>E</code>为大写。</li><li><code>%hd</code>：十进制 short int 类型。</li><li><code>%ho</code>：八进制 short int 类型。</li><li><code>%hx</code>：十六进制 short int 类型。</li><li><code>%hu</code>：unsigned short int 类型。</li><li><code>%ld</code>：十进制 long int 类型。</li><li><code>%lo</code>：八进制 long int 类型。</li><li><code>%lx</code>：十六进制 long int 类型。</li><li><code>%lu</code>：unsigned long int 类型。</li><li><code>%lld</code>：十进制 long long int 类型。</li><li><code>%llo</code>：八进制 long long int 类型。</li><li><code>%llx</code>：十六进制 long long int 类型。</li><li><code>%llu</code>：unsigned long long int 类型。</li><li><code>%Le</code>：科学计数法表示的 long double 类型浮点数。</li><li><code>%Lf</code>：long double 类型浮点数。</li><li><code>%n</code>：已输出的字符串数量。该占位符本身不输出，只将值存储在指定变量之中。</li><li><code>%o</code>：八进制整数。</li><li><code>%p</code>：指针。</li><li><code>%s</code>：字符串。</li><li><code>%u</code>：无符号整数（unsigned int）。</li><li><code>%x</code>：十六进制整数。</li><li><code>%zd</code>：<code>size_t</code>类型。</li><li><code>%%</code>：输出一个百分号。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;printf()参数与占位符是一一对应关系，如果有n个占位符，printf()的参数就应该有n + 1个。如果参数个数少于对应的占位符，printf()可能会输出内存中的任意值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;printf()的占位符有
+      
+    
+    </summary>
+    
+    
+    
+      <category term="C语言" scheme="http://yoursite.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="printf()" scheme="http://yoursite.com/tags/printf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mongoDB解压版安装教程</title>
+    <link href="http://yoursite.com/2019/10/30/mongoDB%E8%A7%A3%E5%8E%8B%E7%89%88%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2019/10/30/mongoDB解压版安装教程/</id>
+    <published>2019-10-30T21:12:39.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="mongoDB解压版安装教程"><a href="#mongoDB解压版安装教程" class="headerlink" title="mongoDB解压版安装教程"></a>mongoDB解压版安装教程</h1><blockquote><p>非关系型数据库MongoDB解压版的安装步骤</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;mongoDB解压版安装教程&quot;&gt;&lt;a href=&quot;#mongoDB解压版安装教程&quot; class=&quot;headerlink&quot; title=&quot;mongoDB解压版安装教程&quot;&gt;&lt;/a&gt;mongoDB解压版安装教程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;非关系型数据库Mo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mongoDB" scheme="http://yoursite.com/tags/mongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试的博客</title>
+    <link href="http://yoursite.com/2019/09/29/%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8D%9A%E5%AE%A23/"/>
+    <id>http://yoursite.com/2019/09/29/测试的博客3/</id>
+    <published>2019-09-29T15:08:12.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试的博客2</title>
+    <link href="http://yoursite.com/2019/09/29/title-1/"/>
+    <id>http://yoursite.com/2019/09/29/title-1/</id>
+    <published>2019-09-29T15:06:07.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试的博客</title>
+    <link href="http://yoursite.com/2019/09/29/title/"/>
+    <id>http://yoursite.com/2019/09/29/title/</id>
+    <published>2019-09-29T15:05:39.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringCloud[2021-9-19]</title>
+    <link href="http://yoursite.com/2019/09/29/springcloud/"/>
+    <id>http://yoursite.com/2019/09/29/springcloud/</id>
+    <published>2019-09-29T14:24:55.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SpringCloud"><a href="#SpringCloud" class="headerlink" title="SpringCloud"></a>SpringCloud</h1><blockquote><p>作者：叮当猫教育：Ange老师</p><p>VX:17670753912 QQ:1351261434</p></blockquote><hr><h2 id="微服务介绍"><a href="#微服务介绍" class="headerlink" title="微服务介绍"></a>微服务介绍</h2><p>说到微服务,我们先来看看dubbo官网得一张图,相信大家对这张图也并不陌生</p><p><img src="/blogImages/20190929/20180804200802511.png" alt="img"></p><p><strong>单一应用架构</strong></p><p>当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本</p><p>ORM<br>用于简化增删改查工作流的，数据访问框架ORM是关键</p><p>优点:开发简单,部署也很简单</p><p>缺点:</p><p>1.扩展不容易,需要将整合应用进行打包</p><p>2.协同开发不容易,多人一起改,容易出错</p><p>3.当应用增大时,性能提升极慢</p><p><strong>垂直应用架构</strong></p><p>当访问量逐渐增大，单一应用增加机器，带来的加速度越来越小 将应用拆分成互不干扰的几个应用，以提升效率</p><p>MVC<br>用于加速前端页面开发的，Web框架MVC是关键</p><p>优点:解决了单体应用得缺点问题</p><p>缺点:</p><p>1.无法做到界面+业务逻辑的实现分离</p><p>2.应用不可能完全独立,大量的应用之间需要交互</p><p><strong>分布式服务架构</strong></p><p>当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务<br>逐渐形成稳定的服务中心，使前端应用能更快速的响应，多变的市场需求</p><p>RPC<br>用于提高业务复用及整合的，分布式服务框架RPC是关键</p><p><img src="/blogImages/20190929/1569726730388.png" alt="1569726730388"></p><p><strong>流动计算架构</strong></p><p>当服务越来越多，容量的评估，小服务的资源浪费等问题，逐渐明显<br>此时，需要增加一个调度中心 ，基于访问压力实时管理集群容量，提高集群利用率</p><p>SOA<br>用于提高 及其利用率的，资源调度和治理中心SOA是关键</p><p><strong>微服务</strong></p><ul><li><p>微服务是一种架构风格，也是一种服务； </p></li><li><p>微服务的颗粒比较小，一个大型复杂软件应用由多个微服务组成，比如Netflflix目前由500多个的微服务组成； </p></li><li><p>它采用UNIX设计的哲学，每种服务只做一件事，是一种松耦合的能够被独立开发和部署的无状态化服务（独立扩展、升级和可替换）。 </p></li></ul><p><strong>微服务和soa的区别</strong></p><p>如果一句话来谈SOA和微服务的区别，即微服务不再强调传统SOA架构里面比较重的ESB企业服务总线，同时SOA的思想进入到单个业务系统内部实现真正的组件化。<br>微服务架构强调的第一个重点就是业务系统需要彻底的组件化和服务化，原有的单个业务系统会拆分为多个可以独立开发，设计，运行和运维的小应用。<br>这些小应用之间通过服务完成交互和集成。<br>每个小应用从前端webui，到控制层，逻辑层，数据库访问，数据库都完全是独立的一套。<br>在这里不用组件而用小应用这个词更加合适，每个小应用除了完成自身本身的业务功能外，重点就是还需要消费外部其它应用暴露的服务，同时自身也将自身的能力朝外部发布为服务。</p><p><strong>微服务架构图</strong></p><p><img src="/blogImages/20190929/1569728771260.png" alt="1569728771260"></p><p><strong>微服务的好处</strong></p><ul><li><p>技术异构性：在一个由多个服务相互协作的系统中，可以在不同的服务中使用最适合该服务的技术。 </p></li><li><p>弹性：如果系统中的一个组件不可用了，但并没有导致级联故障，那么系统的其他部分还可以正常运行。</p></li><li><p>扩展：可以只对那些需要扩展的服务进行扩展。 </p></li><li><p>简化部署：各个服务的部署是独立的，这样就可以更快地对特定部分的代码进行部署。 </p></li><li><p>与组织结构相匹配：可以很好地将架构与组织结构相匹配，避免出现过大的代码库，从而获得理想团队大 </p><p>小及生产力。 </p></li><li><p>可组合性：不同服务模块的接口可以再进行重用，成为其他产品中的一个组件； </p></li><li><p>对可替代性的优化：可以在需要时轻易地重写服务，或者删除不再使用的服务</p></li></ul><p><strong>微服务的缺点</strong></p><ol><li>运维开销 更多的服务也就意味着更多的运维，产品团队需要保证所有的相关服务都有完善的监控等基础设 </li></ol><p>施，传统的架构开发者只需要保证一个应用正常运行，而现在却需要保证几十甚至上百道工序高效运转， </p><p>这是一个艰巨的任务。 </p><ol start="2"><li>DevOps要求 使用微服务架构后，开发团队需要保证一个Tomcat集群可用，保证一个数据库可用，这就意 </li></ol><p>味着团队需要高品质的DevOps和自动化技术。而现在，这样的全栈式人才很少。 </p><ol start="3"><li>隐式接口 服务和服务之间通过接口来“联系”，当某一个服务更改接口格式时，可能涉及到此接口的所有服 </li></ol><p>务都需要做调整。 </p><ol start="4"><li>重复劳动 在很多服务中可能都会使用到同一个功能，而这一功能点没有足够大到提供一个服务的程度，这 </li></ol><p>个时候可能不同的服务团队都会单独开发这一功能，重复的业务逻辑，这违背了良好的软件工程中的很多 </p><p>原则。 </p><ol start="5"><li>分布式系统的复杂性 微服务通过REST API或消息来将不同的服务联系起来，这在之前可能只是一个简单的 </li></ol><p>远程过程调用。分布式系统也就意味着开发者需要考虑网络延迟、容错、消息序列化、不可靠的网络、异 </p><p>步、版本控制、负载等，而面对如此多的微服务都需要分布式时，整个产品需要有一整套完整的机制来保 </p><p>证各个服务可以正常运转。 </p><ol start="6"><li>事务、异步、测试面临挑战 跨进程之间的事务、大量的异步处理、多个微服务之间的整体测试都需要有一 </li></ol><p>整套的解决方案，而现在看起来，这些技术并没有特别成熟。</p><h2 id="SpringCloud介绍"><a href="#SpringCloud介绍" class="headerlink" title="SpringCloud介绍"></a>SpringCloud介绍</h2><p>springcloud是微服务架构的集大成者，将一系列优秀的组件进行了整合。基于springboot构建，对我们熟悉spring的程序员来说，上手比较容易。 </p><p>通过一些简单的注解，我们就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。 </p><p>SpringCloud的组件相当繁杂，拥有诸多子项目。重点关注Netflflix</p><p><img src="/blogImages/20190929/20181018150451575-1569729524043.png" alt="https://img-blog.csdn.net/20181018150451575?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1VuY2xlVGlhbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p><p><strong>下面简单介绍下经常用的5个</strong> </p><p>服务发现——Netflflix Eureka</p><p>客服端负载均衡——Netflflix Ribbon </p><p>断路器——Netflflix Hystrix </p><p>服务网关——Netflflix Zuul </p><p>分布式配置——Spring Cloud Confifig</p><p><strong>Eureka</strong></p><p><img src="/blogImages/20190929/1602999-20190506101317396-25760827.png" alt="点击查看源网页"></p><p>作用：实现服务治理（服务注册与发现） </p><p>简介：Spring Cloud Eureka是Spring Cloud Netflflix项目下的服务治理模块。 </p><p>由两个组件组成：Eureka服务端和Eureka客户端。 </p><p>Eureka服务端用作服务注册中心。支持集群部署。 </p><p>Eureka客户端是一个java客户端，用来处理服务注册与发现。 </p><p>在应用启动时，Eureka客户端向服务端注册自己的服务信息，同时将服务端的服务信息缓存到本地。客户端会和服 </p><p>务端周期性的进行心跳交互，以更新服务租约和服务信息。</p><p><strong>Ribbon</strong></p><p><img src="/blogImages/20190929/b_0_201810030509007747.jpg" alt="http://images3.10qianwan.com/10qianwan/20181003/b_0_201810030509007747.jpg"></p><p>作用：Ribbon，主要提供客户侧的软件负载均衡算法。 </p><p>简介：Spring Cloud Ribbon是一个基于HTTP和TCP的客户端负载均衡工具，它基于Netflflix Ribbon实现。通过 </p><p>Spring Cloud的封装，可以让我们轻松地将面向服务的REST模版请求自动转换成客户端负载均衡的服务调用。 </p><p>注意看上图，关键点就是将外界的rest调用，根据负载均衡策略转换为微服务调用。Ribbon有比较多的负载均衡策略，以后专门讲解。</p><p><strong>Hystrix</strong></p><p><img src="/blogImages/20190929/20180111005330295469.png" alt="http://aliyunzixunbucket.oss-cn-beijing.aliyuncs.com/png/20180111005330295469.png"></p><p>作用：断路器，保护系统，控制故障范围。 </p><p>简介：为了保证其高可用，单个服务通常会集群部署。由于网络原因或者自身的原因，服务并不能保证100%可用， 如果单个服务出现问题，调用这个服务就会出现线程阻塞，此时若有大量的请求涌入，Servlet容器的线程资源会被消耗完毕，导致服务瘫痪。服务与服务之间的依赖性，故障会传播，会对整个微服务系统造成灾难性的严重后果，这就是服务故障的“雪崩”效应。 </p><p><strong>Zuul</strong></p><p><img src="/blogImages/20190929/296430-20190613143253499-1478456381.png" alt="http://img2018.cnblogs.com/blog/296430/201906/296430-20190613143253499-1478456381.png"></p><p>作用：api网关，路由，负载均衡等多种作用 </p><p>简介：类似nginx，反向代理的功能，不过netflix自己增加了一些配合其他组件的特性。 </p><p>在微服务架构中，后端服务往往不直接开放给调用端，而是通过一个API网关根据请求的url，路由到相应的服务。当添加API网关后，在第三方调用端和服务提供方之间就创建了一面墙，这面墙直接与调用方通信进行权限控制，后将请求均衡分发给后台服务端。</p><p><strong>Config</strong></p><p><img src="/blogImages/20190929/e5b911412d28490275e091d8851e3c60.jpg" alt="http://aliyunzixunbucket.oss-cn-beijing.aliyuncs.com/jpg/e5b911412d28490275e091d8851e3c60.jpg?x-oss-process=image/resize,p_100/auto-orient,1/quality,q_90/format,jpg/watermark,image_eXVuY2VzaGk=,t_100"></p><p>作用：配置管理 </p><p>简介：SpringCloud Confifig提供服务器端和客户端。服务器存储后端的默认实现使用git，因此它轻松支持标签版本的 配置环境，以及可以访问用于管理内容的各种工具。 </p><p>这个还是静态的，得配合Spring Cloud Bus实现动态的配置更新。</p><p><strong>相关组件架构图</strong></p><p><img src="/blogImages/20190929/k4i98h3q7o.jpeg" alt="https://ask.qcloudimg.com/http-save/developer-news/k4i98h3q7o.jpeg"></p><p>从上图可以看出Spring Cloud各个组件相互配合，合作支持了一套完整的微服务架构。 </p><p>• 其中Eureka负责服务的注册与发现，很好将各服务连接起来 </p><p>• Hystrix 负责监控服务之间的调用情况，连续多次失败进行熔断保护。 </p><p>• Hystrix dashboard,Turbine 负责监控 Hystrix的熔断情况，并给予图形化的展示 </p><p>• Spring Cloud Confifig 提供了统一的配置中心服务 </p><p>• 当配置文件发生变化的时候，Spring Cloud Bus 负责通知各服务去获取最新的配置信息 </p><p>• 所有对外的请求和服务，我们都通过Zuul来进行转发，起到API网关的作用 </p><p>• 最后我们使用Sleuth+Zipkin将所有的请求数据记录下来，方便我们进行后续分析</p><p><strong>为什么要使用SpringCloud?</strong></p><p>Spring Cloud从设计之初就考虑了绝大多数互联网公司架构演化所需的功能，如服务发现注册、配置中心、消息总 </p><p>线、负载均衡、断路器、数据监控等。这些功能都是以插拔的形式提供出来，方便我们系统架构演进的过程中，可以 合理的选择需要的组件进行集成，从而在架构演进的过程中会更加平滑、顺利。 </p><p>微服务架构是一种趋势，Spring Cloud提供了标准化的、全站式的技术方案，意义可能会堪比当前Servlet规范的诞 生，有效推进服务端软件系统技术水平的进步。</p><p> <strong>SpringCloud官网</strong></p><p>Spring Cloud中文文档：<a href="https://springcloud.cc/" target="_blank" rel="noopener">https://springcloud.cc/</a> </p><p>官网：<a href="https://projects.spring.io/spring-cloud/" target="_blank" rel="noopener">https://projects.spring.io/spring-cloud/</a></p><h2 id="Eureka服务注册与发现"><a href="#Eureka服务注册与发现" class="headerlink" title="Eureka服务注册与发现"></a>Eureka服务注册与发现</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;SpringCloud&quot;&gt;&lt;a href=&quot;#SpringCloud&quot; class=&quot;headerlink&quot; title=&quot;SpringCloud&quot;&gt;&lt;/a&gt;SpringCloud&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;作者：叮当猫教育：Ange老师&lt;/p&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="SpringCloud" scheme="http://yoursite.com/tags/SpringCloud/"/>
+    
+      <category term="微服务" scheme="http://yoursite.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="http://yoursite.com/2019/09/28/2019-09-28-test2/"/>
+    <id>http://yoursite.com/2019/09/28/2019-09-28-test2/</id>
+    <published>2019-09-28T18:46:36.000Z</published>
+    <updated>2022-08-28T20:39:24.730Z</updated>
+    
+    <content type="html"><![CDATA[<p>dsada</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;dsada&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="http://yoursite.com/2019/09/28/test2/"/>
+    <id>http://yoursite.com/2019/09/28/test2/</id>
+    <published>2019-09-28T18:46:36.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<p>dsada</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;dsada&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>text8</title>
+    <link href="http://yoursite.com/2019/09/28/text8/"/>
+    <id>http://yoursite.com/2019/09/28/text8/</id>
+    <published>2019-09-28T16:37:24.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于我的博客是如何搭建的全面介绍</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E7%9A%84%E5%85%A8%E9%9D%A2%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/2019/09/27/关于我的博客是如何搭建的全面介绍/</id>
+    <published>2019-09-27T14:24:55.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:525px; height:245px;" src="https://www.processon.com/embed/6152b98bf346fb69a71b7e93"></iframe><blockquote><p><code>blog搭建难度（1-10）</code>：2021-10-03 03:47<br><code>是否完全免费：</code>自动更新github gitee 并且自动部署更新<br><code>是否能够装x：</code>肯定能啊,但是我肯定只能去幼儿园去和<br><code>是否能够赚钱呀？</code>emmm只要你努力就行，反正我是没赚到钱<br><code>搭建时长：</code>去掉一个最快的，去掉一个偷懒的，平均就20分钟吧<br>….</p></blockquote><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们马上就要开始可以去</p><p>这里输入代码</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe id=&quot;embed_dom&quot; name=&quot;embed_dom&quot; frameborder=&quot;0&quot; style=&quot;display:block;width:525px; height:245px;&quot; src=&quot;https://www.processon.com/embe
+      
+    
+    </summary>
+    
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+      <category term="DaoVoice" scheme="http://yoursite.com/tags/DaoVoice/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的Hexo博客Test</title>
+    <link href="http://yoursite.com/2019/09/25/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/09/25/我的Hexo博客/</id>
+    <published>2019-09-25T15:49:15.000Z</published>
+    <updated>2022-08-28T20:39:24.738Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="SkySkin社区"><a href="#SkySkin社区" class="headerlink" title="SkySkin社区"></a><a href="https://github.com/SkySkin/skycommunity" target="_blank" rel="noopener">SkySkin社区</a></h2><h2 id="快速运行"><a href="#快速运行" class="headerlink" title="快速运行"></a>快速运行</h2><ol><li><p>安装必备工具<br> JDK，Maven</p></li><li><p>克隆代码到本地  </p></li><li><p>运行命令创建数据库脚本</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn flyway:migrate</span><br></pre></td></tr></table></figure></li><li><p>运行打包命令</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure></li><li><p>运行项目  </p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar target/community-0.0.1-SNAPSHOT.jar</span><br></pre></td></tr></table></figure></li><li><p>访问项目</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8887</span><br></pre></td></tr></table></figure></li></ol><h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><p><a href="https://spring.io/guides" target="_blank" rel="noopener">Spring 文档</a><br><a href="https://spring.io/guides/gs/serving-web-content/" target="_blank" rel="noopener">Spring Web</a><br><a href="https://elasticsearch.cn/explore" target="_blank" rel="noopener">es</a><br><a href="https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys" target="_blank" rel="noopener">Github deploy key</a><br><a href="https://v3.bootcss.com/getting-started/" target="_blank" rel="noopener">Bootstrap</a><br><a href="https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/" target="_blank" rel="noopener">Github OAuth</a><br><a href="https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support" target="_blank" rel="noopener">Spring</a><br><a href="https://www.runoob.com/mysql/mysql-insert-query.html" target="_blank" rel="noopener">菜鸟教程</a><br><a href="https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values" target="_blank" rel="noopener">Thymeleaf</a><br><a href="https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#using-boot-devtools" target="_blank" rel="noopener">Spring Dev Tool</a><br><a href="https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor" target="_blank" rel="noopener">Spring MVC</a><br><a href="http://editor.md.ipandao.com/" target="_blank" rel="noopener">Markdown 插件</a><br><a href="https://github.com/ucloud/ufile-sdk-java" target="_blank" rel="noopener">UFfile SDK</a><br><a href="https://mp.weixin.qq.com/s/Rwpke4BHu7Fz7KOpE2d3Lw" target="_blank" rel="noopener">Count(*) VS Count(1)</a>  </p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p><a href="https://git-scm.com/download" target="_blank" rel="noopener">Git</a><br><a href="https://www.visual-paradigm.com" target="_blank" rel="noopener">Visual Paradigm</a><br><a href="https://flywaydb.org/getstarted/firststeps/maven" target="_blank" rel="noopener">Flyway</a><br><a href="https://www.projectlombok.org" target="_blank" rel="noopener">Lombok</a><br><a href="https://www.octotree.io/" target="_blank" rel="noopener">ctotree</a><br><a href="https://chrome.google.com/webstore/detail/table-of-contents-sidebar/ohohkfheangmbedkgechjkmbepeikkej" target="_blank" rel="noopener">Table of content sidebar</a><br><a href="https://chrome.google.com/webstore/detail/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="noopener">One Tab</a><br><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei/related" target="_blank" rel="noopener">Live Reload</a><br><a href="https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff" target="_blank" rel="noopener">Postman</a></p><h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">USER</span></span><br><span class="line">(</span><br><span class="line">    <span class="keyword">ID</span> <span class="built_in">int</span> AUTO_INCREMENT PRIMARY <span class="keyword">KEY</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    ACCOUNT_ID <span class="built_in">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">    <span class="keyword">NAME</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    TOKEN <span class="built_in">VARCHAR</span>(<span class="number">36</span>),</span><br><span class="line">    GMT_CREATE <span class="built_in">BIGINT</span>,</span><br><span class="line">    GMT_MODIFIED <span class="built_in">BIGINT</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mvn flyway:migrate</span><br><span class="line">mvn -Dmybatis.generator.overwrite=<span class="literal">true</span> mybatis-generator:generate</span><br></pre></td></tr></table></figure><h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><ul><li>2019-7-30 修复 session 过期时间很短问题   </li><li>2019-8-2 修复因为*和+号产生的搜索异常问题  </li><li>2019-8-18 添加首页按照最新、最热、零回复排序  </li><li>2019-8-18 修复搜索输入 ? 号出现异常问题</li><li>2019-8-22 修复图片大小限制和提问内容为空问题</li><li>2019-9-1 添加动态导航栏</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;SkySkin社区&quot;&gt;&lt;a href=&quot;#SkySkin社区&quot; class=&quot;headerlink&quot; title=&quot;SkySkin社区&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/SkySkin/skycommunity&quot; target=&quot;_
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

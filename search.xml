@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World[2021-9-19]]]></title>
+    <url>%2F2022%2F08%2F28%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[C语言之printf()函数的参数与占位符]]></title>
+    <url>%2F2021%2F10%2F15%2FC-Code%2Fprintf%E5%8F%82%E6%95%B0%E4%B8%8E%E5%8D%A0%E4%BD%8D%E7%AC%A6%2F</url>
+    <content type="text"><![CDATA[printf()参数与占位符是一一对应关系，如果有n个占位符，printf()的参数就应该有n + 1个。如果参数个数少于对应的占位符，printf()可能会输出内存中的任意值。 printf()的占位符有许多种类，与 C 语言的数据类型相对应。下面按照字母顺序，列出常用的占位符，方便查找，具体含义在后面章节介绍。 %a：浮点数。 %A：浮点数。 %c：字符。 %d：十进制整数。 %e：使用科学计数法的浮点数，指数部分的e为小写。 %E：使用科学计数法的浮点数，指数部分的E为大写。 %i：整数，基本等同于%d。 %f：小数（包含float类型和double类型）。 %g：6个有效数字的浮点数。整数部分一旦超过6位，就会自动转为科学计数法，指数部分的e为小写。 %G：等同于%g，唯一的区别是指数部分的E为大写。 %hd：十进制 short int 类型。 %ho：八进制 short int 类型。 %hx：十六进制 short int 类型。 %hu：unsigned short int 类型。 %ld：十进制 long int 类型。 %lo：八进制 long int 类型。 %lx：十六进制 long int 类型。 %lu：unsigned long int 类型。 %lld：十进制 long long int 类型。 %llo：八进制 long long int 类型。 %llx：十六进制 long long int 类型。 %llu：unsigned long long int 类型。 %Le：科学计数法表示的 long double 类型浮点数。 %Lf：long double 类型浮点数。 %n：已输出的字符串数量。该占位符本身不输出，只将值存储在指定变量之中。 %o：八进制整数。 %p：指针。 %s：字符串。 %u：无符号整数（unsigned int）。 %x：十六进制整数。 %zd：size_t类型。 %%：输出一个百分号。]]></content>
+      <tags>
+        <tag>C语言</tag>
+        <tag>printf()</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mongoDB解压版安装教程]]></title>
+    <url>%2F2019%2F10%2F30%2FmongoDB%E8%A7%A3%E5%8E%8B%E7%89%88%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[mongoDB解压版安装教程 非关系型数据库MongoDB解压版的安装步骤]]></content>
+      <tags>
+        <tag>mongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[测试的博客]]></title>
+    <url>%2F2019%2F09%2F29%2F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8D%9A%E5%AE%A23%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[测试的博客2]]></title>
+    <url>%2F2019%2F09%2F29%2Ftitle-1%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[测试的博客]]></title>
+    <url>%2F2019%2F09%2F29%2Ftitle%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringCloud[2021-9-19]]]></title>
+    <url>%2F2019%2F09%2F29%2Fspringcloud%2F</url>
+    <content type="text"><![CDATA[SpringCloud 作者：叮当猫教育：Ange老师 VX:17670753912 QQ:1351261434 微服务介绍说到微服务,我们先来看看dubbo官网得一张图,相信大家对这张图也并不陌生 单一应用架构 当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本 ORM用于简化增删改查工作流的，数据访问框架ORM是关键 优点:开发简单,部署也很简单 缺点: 1.扩展不容易,需要将整合应用进行打包 2.协同开发不容易,多人一起改,容易出错 3.当应用增大时,性能提升极慢 垂直应用架构 当访问量逐渐增大，单一应用增加机器，带来的加速度越来越小 将应用拆分成互不干扰的几个应用，以提升效率 MVC用于加速前端页面开发的，Web框架MVC是关键 优点:解决了单体应用得缺点问题 缺点: 1.无法做到界面+业务逻辑的实现分离 2.应用不可能完全独立,大量的应用之间需要交互 分布式服务架构 当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务逐渐形成稳定的服务中心，使前端应用能更快速的响应，多变的市场需求 RPC用于提高业务复用及整合的，分布式服务框架RPC是关键 流动计算架构 当服务越来越多，容量的评估，小服务的资源浪费等问题，逐渐明显此时，需要增加一个调度中心 ，基于访问压力实时管理集群容量，提高集群利用率 SOA用于提高 及其利用率的，资源调度和治理中心SOA是关键 微服务 微服务是一种架构风格，也是一种服务； 微服务的颗粒比较小，一个大型复杂软件应用由多个微服务组成，比如Netflflix目前由500多个的微服务组成； 它采用UNIX设计的哲学，每种服务只做一件事，是一种松耦合的能够被独立开发和部署的无状态化服务（独立扩展、升级和可替换）。 微服务和soa的区别 如果一句话来谈SOA和微服务的区别，即微服务不再强调传统SOA架构里面比较重的ESB企业服务总线，同时SOA的思想进入到单个业务系统内部实现真正的组件化。微服务架构强调的第一个重点就是业务系统需要彻底的组件化和服务化，原有的单个业务系统会拆分为多个可以独立开发，设计，运行和运维的小应用。这些小应用之间通过服务完成交互和集成。每个小应用从前端webui，到控制层，逻辑层，数据库访问，数据库都完全是独立的一套。在这里不用组件而用小应用这个词更加合适，每个小应用除了完成自身本身的业务功能外，重点就是还需要消费外部其它应用暴露的服务，同时自身也将自身的能力朝外部发布为服务。 微服务架构图 微服务的好处 技术异构性：在一个由多个服务相互协作的系统中，可以在不同的服务中使用最适合该服务的技术。 弹性：如果系统中的一个组件不可用了，但并没有导致级联故障，那么系统的其他部分还可以正常运行。 扩展：可以只对那些需要扩展的服务进行扩展。 简化部署：各个服务的部署是独立的，这样就可以更快地对特定部分的代码进行部署。 与组织结构相匹配：可以很好地将架构与组织结构相匹配，避免出现过大的代码库，从而获得理想团队大 小及生产力。 可组合性：不同服务模块的接口可以再进行重用，成为其他产品中的一个组件； 对可替代性的优化：可以在需要时轻易地重写服务，或者删除不再使用的服务 微服务的缺点 运维开销 更多的服务也就意味着更多的运维，产品团队需要保证所有的相关服务都有完善的监控等基础设 施，传统的架构开发者只需要保证一个应用正常运行，而现在却需要保证几十甚至上百道工序高效运转， 这是一个艰巨的任务。 DevOps要求 使用微服务架构后，开发团队需要保证一个Tomcat集群可用，保证一个数据库可用，这就意 味着团队需要高品质的DevOps和自动化技术。而现在，这样的全栈式人才很少。 隐式接口 服务和服务之间通过接口来“联系”，当某一个服务更改接口格式时，可能涉及到此接口的所有服 务都需要做调整。 重复劳动 在很多服务中可能都会使用到同一个功能，而这一功能点没有足够大到提供一个服务的程度，这 个时候可能不同的服务团队都会单独开发这一功能，重复的业务逻辑，这违背了良好的软件工程中的很多 原则。 分布式系统的复杂性 微服务通过REST API或消息来将不同的服务联系起来，这在之前可能只是一个简单的 远程过程调用。分布式系统也就意味着开发者需要考虑网络延迟、容错、消息序列化、不可靠的网络、异 步、版本控制、负载等，而面对如此多的微服务都需要分布式时，整个产品需要有一整套完整的机制来保 证各个服务可以正常运转。 事务、异步、测试面临挑战 跨进程之间的事务、大量的异步处理、多个微服务之间的整体测试都需要有一 整套的解决方案，而现在看起来，这些技术并没有特别成熟。 SpringCloud介绍springcloud是微服务架构的集大成者，将一系列优秀的组件进行了整合。基于springboot构建，对我们熟悉spring的程序员来说，上手比较容易。 通过一些简单的注解，我们就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。 SpringCloud的组件相当繁杂，拥有诸多子项目。重点关注Netflflix 下面简单介绍下经常用的5个 服务发现——Netflflix Eureka 客服端负载均衡——Netflflix Ribbon 断路器——Netflflix Hystrix 服务网关——Netflflix Zuul 分布式配置——Spring Cloud Confifig Eureka 作用：实现服务治理（服务注册与发现） 简介：Spring Cloud Eureka是Spring Cloud Netflflix项目下的服务治理模块。 由两个组件组成：Eureka服务端和Eureka客户端。 Eureka服务端用作服务注册中心。支持集群部署。 Eureka客户端是一个java客户端，用来处理服务注册与发现。 在应用启动时，Eureka客户端向服务端注册自己的服务信息，同时将服务端的服务信息缓存到本地。客户端会和服 务端周期性的进行心跳交互，以更新服务租约和服务信息。 Ribbon 作用：Ribbon，主要提供客户侧的软件负载均衡算法。 简介：Spring Cloud Ribbon是一个基于HTTP和TCP的客户端负载均衡工具，它基于Netflflix Ribbon实现。通过 Spring Cloud的封装，可以让我们轻松地将面向服务的REST模版请求自动转换成客户端负载均衡的服务调用。 注意看上图，关键点就是将外界的rest调用，根据负载均衡策略转换为微服务调用。Ribbon有比较多的负载均衡策略，以后专门讲解。 Hystrix 作用：断路器，保护系统，控制故障范围。 简介：为了保证其高可用，单个服务通常会集群部署。由于网络原因或者自身的原因，服务并不能保证100%可用， 如果单个服务出现问题，调用这个服务就会出现线程阻塞，此时若有大量的请求涌入，Servlet容器的线程资源会被消耗完毕，导致服务瘫痪。服务与服务之间的依赖性，故障会传播，会对整个微服务系统造成灾难性的严重后果，这就是服务故障的“雪崩”效应。 Zuul 作用：api网关，路由，负载均衡等多种作用 简介：类似nginx，反向代理的功能，不过netflix自己增加了一些配合其他组件的特性。 在微服务架构中，后端服务往往不直接开放给调用端，而是通过一个API网关根据请求的url，路由到相应的服务。当添加API网关后，在第三方调用端和服务提供方之间就创建了一面墙，这面墙直接与调用方通信进行权限控制，后将请求均衡分发给后台服务端。 Config 作用：配置管理 简介：SpringCloud Confifig提供服务器端和客户端。服务器存储后端的默认实现使用git，因此它轻松支持标签版本的 配置环境，以及可以访问用于管理内容的各种工具。 这个还是静态的，得配合Spring Cloud Bus实现动态的配置更新。 相关组件架构图 从上图可以看出Spring Cloud各个组件相互配合，合作支持了一套完整的微服务架构。 • 其中Eureka负责服务的注册与发现，很好将各服务连接起来 • Hystrix 负责监控服务之间的调用情况，连续多次失败进行熔断保护。 • Hystrix dashboard,Turbine 负责监控 Hystrix的熔断情况，并给予图形化的展示 • Spring Cloud Confifig 提供了统一的配置中心服务 • 当配置文件发生变化的时候，Spring Cloud Bus 负责通知各服务去获取最新的配置信息 • 所有对外的请求和服务，我们都通过Zuul来进行转发，起到API网关的作用 • 最后我们使用Sleuth+Zipkin将所有的请求数据记录下来，方便我们进行后续分析 为什么要使用SpringCloud? Spring Cloud从设计之初就考虑了绝大多数互联网公司架构演化所需的功能，如服务发现注册、配置中心、消息总 线、负载均衡、断路器、数据监控等。这些功能都是以插拔的形式提供出来，方便我们系统架构演进的过程中，可以 合理的选择需要的组件进行集成，从而在架构演进的过程中会更加平滑、顺利。 微服务架构是一种趋势，Spring Cloud提供了标准化的、全站式的技术方案，意义可能会堪比当前Servlet规范的诞 生，有效推进服务端软件系统技术水平的进步。 SpringCloud官网 Spring Cloud中文文档：https://springcloud.cc/ 官网：https://projects.spring.io/spring-cloud/ Eureka服务注册与发现]]></content>
+      <tags>
+        <tag>SpringCloud</tag>
+        <tag>微服务</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test2]]></title>
+    <url>%2F2019%2F09%2F28%2F2019-09-28-test2%2F</url>
+    <content type="text"><![CDATA[dsada]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[test2]]></title>
+    <url>%2F2019%2F09%2F28%2Ftest2%2F</url>
+    <content type="text"><![CDATA[dsada]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[text8]]></title>
+    <url>%2F2019%2F09%2F28%2Ftext8%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[关于我的博客是如何搭建的全面介绍]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E7%9A%84%E5%85%A8%E9%9D%A2%E4%BB%8B%E7%BB%8D%2F</url>
+    <content type="text"><![CDATA[blog搭建难度（1-10）：2021-10-03 03:47是否完全免费：自动更新github gitee 并且自动部署更新是否能够装x：肯定能啊,但是我肯定只能去幼儿园去和是否能够赚钱呀？emmm只要你努力就行，反正我是没赚到钱搭建时长：去掉一个最快的，去掉一个偷懒的，平均就20分钟吧…. 前言我们马上就要开始可以去 这里输入代码]]></content>
+      <tags>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>DaoVoice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的Hexo博客Test]]></title>
+    <url>%2F2019%2F09%2F25%2F%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[SkySkin社区快速运行 安装必备工具 JDK，Maven 克隆代码到本地 运行命令创建数据库脚本 1mvn flyway:migrate 运行打包命令 1mvn package 运行项目 1java -jar target/community-0.0.1-SNAPSHOT.jar 访问项目 1http://localhost:8887 资料Spring 文档Spring WebesGithub deploy keyBootstrapGithub OAuthSpring菜鸟教程ThymeleafSpring Dev ToolSpring MVCMarkdown 插件UFfile SDKCount(*) VS Count(1) 工具GitVisual ParadigmFlywayLombokctotreeTable of content sidebarOne TabLive ReloadPostman 脚本123456789CREATE TABLE USER( ID int AUTO_INCREMENT PRIMARY KEY NOT NULL, ACCOUNT_ID VARCHAR(100), NAME VARCHAR(50), TOKEN VARCHAR(36), GMT_CREATE BIGINT, GMT_MODIFIED BIGINT); 12mvn flyway:migratemvn -Dmybatis.generator.overwrite=true mybatis-generator:generate 更新日志 2019-7-30 修复 session 过期时间很短问题 2019-8-2 修复因为*和+号产生的搜索异常问题 2019-8-18 添加首页按照最新、最热、零回复排序 2019-8-18 修复搜索输入 ? 号出现异常问题 2019-8-22 修复图片大小限制和提问内容为空问题 2019-9-1 添加动态导航栏]]></content>
+  </entry>
+</search>
